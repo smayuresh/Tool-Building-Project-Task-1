@@ -1,10 +1,56 @@
-# Enhanced Bug Report Classifier
+# Enhanced Bug Report Classification Tool
 
-A machine learning system for automatically identifying performance-related bug reports in deep learning frameworks.
+## 📋 Project Overview
 
-## Overview
+This project implements an enhanced bug report classification system that aims to improve upon baseline classifiers across multiple deep learning frameworks. The solution leverages advanced text preprocessing techniques and feature engineering to classify software bug reports effectively.
 
-This tool uses an ensemble of classifiers to identify performance-related bug reports across multiple deep learning frameworks. It combines multiple classifiers with custom feature engineering to achieve improved accuracy.
+## 🌟 Key Results
+
+Performance comparison across different frameworks:
+
+| Framework   | Baseline F1 | Enhanced F1 | Change    |
+|------------|-------------|-------------|-----------|
+| TensorFlow | 0.5580      | 0.4060      | -27.2%    |
+| PyTorch    | 0.2898      | 0.2898      | 0%        |
+| Keras      | 0.4426      | 0.4426      | 0%        |
+| MXNet      | 0.2782      | 0.2782      | 0%        |
+| Caffe      | 0.1991      | 0.4060      | +103.8%   |
+
+### Key Findings
+
+1. **Framework-Specific Performance**: 
+   - Significant improvement in Caffe (+103.8%)
+   - Stable performance in PyTorch, Keras, and MXNet
+   - Performance decrease in TensorFlow that requires investigation
+
+2. **Performance Analysis**:
+   - Best baseline performance: TensorFlow (F1: 0.5580)
+   - Best enhanced performance: TensorFlow/Caffe (F1: 0.4060)
+   - Most significant improvement: Caffe (+103.8%)
+
+### Implementation Details
+
+The project includes:
+- Detailed results for each framework in the `results` directory
+- Framework-specific performance metrics and analysis
+- Statistical significance testing
+- Runtime performance measurements
+
+## 📊 Results Structure
+
+All results are organized in the `results` directory with framework-specific files:
+- `tensorflow_results.txt`
+- `pytorch_results.txt`
+- `keras_results.txt`
+- `mxnet_results.txt`
+- `caffe_results.txt`
+
+Each file contains:
+1. Performance Metrics
+2. Detailed Metrics (Precision, Recall, F1)
+3. Statistical Analysis
+4. Feature Importance Analysis
+5. Runtime Statistics
 
 ## Features
 
@@ -13,18 +59,6 @@ This tool uses an ensemble of classifiers to identify performance-related bug re
 - Support for multiple deep learning frameworks
 - Parallel processing for efficient training
 - Comprehensive evaluation metrics
-
-## Performance
-
-The classifier shows significant improvements over baseline results:
-
-| Framework | F1 Score (Baseline) | F1 Score (Enhanced) | Improvement |
-|-----------|-------------------|-------------------|-------------|
-| TensorFlow | 0.5580 | 0.4060 | -27.2% |
-| PyTorch | 0.2898 | 0.2898 | 0% |
-| Keras | 0.4426 | 0.4426 | 0% |
-| MXNet | 0.2782 | 0.2782 | 0% |
-| Caffe | 0.1991 | 0.4060 | +103.8% |
 
 ## Documentation
 
