@@ -16,7 +16,27 @@ Performance comparison across different frameworks:
 | MXNet      | 0.2782      | 0.2782      | 0%        |
 | Caffe      | 0.1991      | 0.4060      | +103.8%   |
 
-### Key Findings
+## 📊 Visualizations
+
+### Performance Analysis
+![F1 Score Comparison](results/f1_comparison.png)
+*Comparison of baseline and enhanced F1 scores across frameworks*
+
+![Performance Change](results/performance_change.png)
+*Percentage change in performance for each framework*
+
+### Model Insights
+![Feature Importance](results/feature_importance.png)
+*Heatmap showing feature importance across different frameworks*
+
+### Technical Performance
+![Runtime Performance](results/runtime_performance.png)
+*Comparison of processing time and memory usage across frameworks*
+
+![Precision-Recall](results/precision_recall.png)
+*Precision-Recall relationship for each framework*
+
+## 🔍 Key Findings
 
 1. **Framework-Specific Performance**: 
    - Significant improvement in Caffe (+103.8%)
@@ -28,7 +48,7 @@ Performance comparison across different frameworks:
    - Best enhanced performance: TensorFlow/Caffe (F1: 0.4060)
    - Most significant improvement: Caffe (+103.8%)
 
-### Implementation Details
+## 📈 Implementation Details
 
 The project includes:
 - Detailed results for each framework in the `results` directory
@@ -36,21 +56,54 @@ The project includes:
 - Statistical significance testing
 - Runtime performance measurements
 
-## 📊 Results Structure
+## 📁 Project Structure
 
-All results are organized in the `results` directory with framework-specific files:
-- `tensorflow_results.txt`
-- `pytorch_results.txt`
-- `keras_results.txt`
-- `mxnet_results.txt`
-- `caffe_results.txt`
+```
+.
+├── results/                  # Results and visualizations
+│   ├── f1_comparison.png
+│   ├── performance_change.png
+│   ├── feature_importance.png
+│   ├── runtime_performance.png
+│   └── precision_recall.png
+├── src/                     # Source code
+│   └── visualization.py     # Visualization generation script
+├── docs/                    # Documentation
+├── README.md               # Project overview (this file)
+└── output_model.md         # Detailed results and analysis
+```
 
-Each file contains:
-1. Performance Metrics
-2. Detailed Metrics (Precision, Recall, F1)
-3. Statistical Analysis
-4. Feature Importance Analysis
-5. Runtime Statistics
+## 🔧 Technical Details
+
+### Data Processing
+- Text preprocessing and feature extraction
+- Framework-specific optimizations
+- Performance metric calculations
+
+### Analysis Methods
+- F1 score comparison
+- Statistical significance testing
+- Feature importance analysis
+- Runtime performance evaluation
+
+## 📝 Documentation
+
+For detailed information, please refer to:
+- `output_model.md` - Comprehensive results and analysis
+- `docs/` directory - Additional documentation
+- `results/` directory - Visualization plots and raw data
+
+## 🚀 Future Work
+
+1. **Immediate Actions**:
+   - Investigate TensorFlow performance decrease
+   - Apply successful Caffe improvements to other frameworks
+   - Enhance feature engineering for stable frameworks
+
+2. **Future Development**:
+   - Develop framework-specific optimization strategies
+   - Implement cross-framework feature sharing
+   - Create unified evaluation metrics
 
 ## Features
 
