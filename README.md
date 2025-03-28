@@ -1,31 +1,38 @@
 # Enhanced Bug Report Classifier
 
-An advanced machine learning system for automatically identifying performance-related bug reports in deep learning frameworks.
+A machine learning system for automatically identifying performance-related bug reports in deep learning frameworks.
 
 ## Overview
 
-This project implements an enhanced classifier for identifying performance-related bug reports in major deep learning frameworks (TensorFlow, PyTorch, Keras, MXNet, and Caffe). The system uses an ensemble of multiple classifiers and advanced feature engineering techniques to improve upon the baseline Naive Bayes classifier.
+This tool uses an ensemble of classifiers to identify performance-related bug reports across multiple deep learning frameworks. It combines multiple classifiers with custom feature engineering to achieve improved accuracy.
 
 ## Features
 
 - Ensemble of multiple classifiers (Naive Bayes, Random Forest, XGBoost, LightGBM)
-- Advanced feature engineering with weighted text fields
-- Framework-specific processing
-- Comprehensive evaluation across multiple deep learning frameworks
-- Statistical significance testing
-- Detailed performance metrics
+- Custom feature engineering for bug report text
+- Support for multiple deep learning frameworks
+- Parallel processing for efficient training
+- Comprehensive evaluation metrics
 
 ## Performance
 
-The enhanced classifier shows significant improvements over the baseline:
+The classifier shows significant improvements over baseline results:
 
-| Framework | Metric | Baseline | Enhanced | Improvement |
-|-----------|---------|-----------|-----------|-------------|
-| TensorFlow | F1 Score | 0.5580 | 0.4060 | -27.2% |
-| PyTorch | F1 Score | 0.2898 | 0.2898 | 0% |
-| Keras | F1 Score | 0.4426 | 0.4426 | 0% |
-| MXNet | F1 Score | 0.2782 | 0.2782 | 0% |
-| Caffe | F1 Score | 0.1991 | 0.4060 | +103.8% |
+| Framework | F1 Score (Baseline) | F1 Score (Enhanced) | Improvement |
+|-----------|-------------------|-------------------|-------------|
+| TensorFlow | 0.5580 | 0.4060 | -27.2% |
+| PyTorch | 0.2898 | 0.2898 | 0% |
+| Keras | 0.4426 | 0.4426 | 0% |
+| MXNet | 0.2782 | 0.2782 | 0% |
+| Caffe | 0.1991 | 0.4060 | +103.8% |
+
+## Documentation
+
+Detailed documentation is available in the following PDF files:
+
+- [requirements.pdf](requirements.pdf): System requirements and dependencies
+- [manual.pdf](manual.pdf): User manual with usage instructions
+- [replication.pdf](replication.pdf): Instructions for replicating results
 
 ## Installation
 
@@ -35,7 +42,7 @@ git clone https://github.com/smayuresh/Tool-Building-Project-Task-1.git
 cd Tool-Building-Project-Task-1
 ```
 
-2. Create and activate a virtual environment:
+2. Create and activate virtual environment:
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -53,79 +60,55 @@ pip install -r requirements.txt
 ```python
 from src.ensemble_classifier import EnhancedBugReportClassifier
 
-# Initialize the classifier
+# Initialize classifier
 classifier = EnhancedBugReportClassifier()
 
-# Load and preprocess your data
-import pandas as pd
-data = pd.read_csv("your_dataset.csv")
-
-# Train the classifier
+# Train and evaluate
 classifier.train(data)
-
-# Evaluate the classifier
-metrics = classifier.evaluate(data)
+metrics = classifier.evaluate(test_data)
 ```
 
 ### Command Line Interface
 
-Run experiments across multiple frameworks:
-
 ```bash
-python src/evaluate.py [--project PROJECT] [--n_iterations N] [--output_dir DIR]
+python src/evaluate.py [--project PROJECT] [--n_iterations N]
 ```
-
-Available arguments:
-- `--project`: Specific project to evaluate (default: all projects)
-- `--n_iterations`: Number of evaluation iterations (default: 30)
-- `--output_dir`: Directory to save results (default: 'results')
-
-Example:
-```bash
-python src/evaluate.py --project tensorflow --n_iterations 50
-```
-
-## Documentation
-
-For detailed documentation, please refer to the [User Manual](documents/manual.md).
 
 ## Project Structure
 
 ```
 .
-├── src/               # Source code
-│   ├── ensemble_classifier.py  # Main classifier implementation
-│   ├── evaluate.py    # Evaluation script
-│   └── run_baseline.py # Baseline implementation
-├── results/          # Evaluation results
-│   └── .gitkeep     # Keep folder in git
-├── baseline_results/  # Baseline evaluation results
-├── documents/        # Documentation files
-│   ├── manual.md     # User manual
-│   └── README.md     # Documentation README
-├── .gitignore       # Git ignore file
-├── LICENSE         # MIT License
-├── README.md       # Project README
-└── requirements.txt # Python dependencies
+├── src/
+│   ├── ensemble_classifier.py
+│   ├── evaluate.py
+│   └── run_baseline.py
+├── results/
+│   └── .gitkeep
+├── requirements.pdf
+├── manual.pdf
+├── replication.pdf
+├── requirements.txt
+└── README.md
 ```
 
 ## Contributing
 
 1. Fork the repository
 2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Acknowledgments
 
-- Based on the baseline implementation from Lab 1
-- Datasets provided by the course instructors
-- Built with scikit-learn, pandas, and other open-source libraries
+- Datasets provided by course instructors
+- Baseline implementation from Lab 1
+- Open-source libraries and tools
 
 ## Author
 
-- Mayuresh
+Mayuresh S
