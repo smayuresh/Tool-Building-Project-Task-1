@@ -31,8 +31,8 @@ The enhanced classifier shows significant improvements over the baseline:
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/mayuresh/bug-report-classifier.git
-cd bug-report-classifier
+git clone https://github.com/smayuresh/Tool-Building-Project-Task-1.git
+cd Tool-Building-Project-Task-1
 ```
 
 2. Create and activate a virtual environment:
@@ -87,21 +87,25 @@ python evaluate.py --project tensorflow --n_iterations 50
 
 ## Documentation
 
-For detailed documentation, please refer to the [User Manual](ISE/documents/manual.md).
+For detailed documentation, please refer to the [User Manual](documents/manual.md).
 
 ## Project Structure
 
 ```
-ISE/
+.
 ├── documents/           # Documentation files
 │   ├── manual.md       # User manual
 │   └── README.md       # Documentation README
 ├── baseline_results/    # Baseline evaluation results
-└── coursework/         # Main project implementation
-    └── src/           # Source code
-        ├── evaluate.py
-        ├── ensemble_classifier.py
-        └── run_baseline.py
+├── coursework/         # Main project implementation
+│   └── src/           # Source code
+│       ├── evaluate.py
+│       ├── ensemble_classifier.py
+│       └── run_baseline.py
+├── .gitignore         # Git ignore file
+├── LICENSE           # MIT License
+├── README.md         # Project README
+└── requirements.txt  # Python dependencies
 ```
 
 ## Contributing
@@ -123,4 +127,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Author
 
-- Mayuresh 
+- Mayuresh
