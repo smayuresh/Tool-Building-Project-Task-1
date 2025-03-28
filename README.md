@@ -28,17 +28,11 @@ The classifier shows significant improvements over baseline results:
 
 ## Documentation
 
-Documentation is available in both PDF and Markdown formats:
+Comprehensive documentation is available in PDF format in the root directory:
 
-### PDF Documentation (in root directory)
-- [requirements.pdf](requirements.pdf): System requirements and dependencies
-- [manual.pdf](manual.pdf): User manual with usage instructions
-- [replication.pdf](replication.pdf): Instructions for replicating results
-
-### Markdown Documentation (in docs directory)
-- [requirements.md](docs/requirements.md): System requirements and dependencies
-- [manual.md](docs/manual.md): User manual with usage instructions
-- [replication.md](docs/replication.md): Instructions for replicating results
+- [requirements.pdf](requirements.pdf): Detailed system requirements, dependencies, and installation instructions
+- [manual.pdf](manual.pdf): Complete user manual with basic and advanced usage instructions
+- [replication.pdf](replication.pdf): Step-by-step guide for replicating the reported results
 
 ## Installation
 
@@ -94,6 +88,7 @@ python src/evaluate.py [--project PROJECT] [--n_iterations N]
 │   └── replication.md
 ├── results/
 │   └── .gitkeep
+├── baseline_results_20250328_072121.txt
 ├── requirements.pdf
 ├── manual.pdf
 ├── replication.pdf
