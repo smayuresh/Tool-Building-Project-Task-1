@@ -67,7 +67,9 @@ The project includes:
 │   ├── runtime_performance.png
 │   └── precision_recall.png
 ├── src/                     # Source code
-│   └── visualization.py     # Visualization generation script
+│   ├── ensemble_classifier.py  # Main classifier implementation
+│   ├── evaluate.py            # Evaluation and metrics calculation
+│   └── visualization.py       # Visualization generation script
 ├── docs/                    # Documentation
 ├── README.md               # Project overview (this file)
 └── output_model.md         # Detailed results and analysis
@@ -76,9 +78,25 @@ The project includes:
 ## 🔧 Technical Details
 
 ### Data Processing
-- Text preprocessing and feature extraction
-- Framework-specific optimizations
+- Custom text preprocessing pipeline
+- Framework-specific feature extraction
 - Performance metric calculations
+
+### Implementation
+1. **Ensemble Classifier** (`src/ensemble_classifier.py`)
+   - Main classification system
+   - Custom feature engineering
+   - Framework-specific optimizations
+
+2. **Evaluation System** (`src/evaluate.py`)
+   - Performance measurement
+   - Statistical analysis
+   - Results generation
+
+3. **Visualization** (`src/visualization.py`)
+   - Performance plots
+   - Comparative analysis
+   - Metric visualization
 
 ### Analysis Methods
 - F1 score comparison
