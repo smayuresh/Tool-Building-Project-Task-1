@@ -1,0 +1,40 @@
+Enhanced Bug Report Classifier - TensorFlow Results
+==============================================
+
+Performance Metrics
+-----------------
+Baseline F1 Score: 0.5580
+Enhanced F1 Score: 0.4060
+Improvement: -27.2%
+
+Detailed Metrics
+---------------
+Precision (Baseline): 0.5423
+Recall (Baseline): 0.5744
+F1 Score (Baseline): 0.5580
+
+Precision (Enhanced): 0.3890
+Recall (Enhanced): 0.4241
+F1 Score (Enhanced): 0.4060
+
+Statistical Analysis
+------------------
+p-value: 0.0231 (statistically significant at p < 0.05)
+Standard Deviation (Baseline): 0.0342
+Standard Deviation (Enhanced): 0.0287
+
+Feature Importance Analysis
+-------------------------
+Top 5 Features:
+1. Performance Keywords: 0.2845
+2. Stack Trace Patterns: 0.2156
+3. Time References: 0.1934
+4. Memory Usage: 0.1677
+5. Error Messages: 0.1388
+
+Runtime Statistics
+----------------
+Average Processing Time: 2.34s per report
+Memory Usage: 1.2GB
+Batch Size: 128
+Number of Iterations: 30 

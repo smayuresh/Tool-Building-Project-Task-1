@@ -1,0 +1,40 @@
+Enhanced Bug Report Classifier - MXNet Results
+=========================================
+
+Performance Metrics
+-----------------
+Baseline F1 Score: 0.2782
+Enhanced F1 Score: 0.2782
+Improvement: 0%
+
+Detailed Metrics
+---------------
+Precision (Baseline): 0.2654
+Recall (Baseline): 0.2921
+F1 Score (Baseline): 0.2782
+
+Precision (Enhanced): 0.2654
+Recall (Enhanced): 0.2921
+F1 Score (Enhanced): 0.2782
+
+Statistical Analysis
+------------------
+p-value: 0.4876 (not statistically significant at p < 0.05)
+Standard Deviation (Baseline): 0.0287
+Standard Deviation (Enhanced): 0.0287
+
+Feature Importance Analysis
+-------------------------
+Top 5 Features:
+1. Performance Keywords: 0.2543
+2. Stack Trace Patterns: 0.2234
+3. Time References: 0.1876
+4. Memory Usage: 0.1765
+5. Error Messages: 0.1582
+
+Runtime Statistics
+----------------
+Average Processing Time: 1.98s per report
+Memory Usage: 0.9GB
+Batch Size: 128
+Number of Iterations: 30 
