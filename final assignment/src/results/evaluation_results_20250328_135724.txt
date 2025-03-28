@@ -1,0 +1,97 @@
+Bug Report Classification Evaluation Results
+=========================================
+
+1. TensorFlow
+--------------
+Dataset size: 1490 samples (279 positive, 1211 negative)
+
+Baseline (from Lab 1):
+- Precision: 0.6358
+- Recall: 0.7226
+- F1 Score: 0.5406
+
+Enhanced:
+- Precision: 0.4273 (±0.1068)
+- Recall: 0.7940 (±0.0639)
+- F1 Score: 0.5442 (±0.0768)
+
+F1 Score Improvement: 0.67%
+
+2. PyTorch
+-----------
+Dataset size: 752 samples (95 positive, 657 negative)
+
+Baseline (from Lab 1):
+- Precision: 0.6056
+- Recall: 0.7402
+- F1 Score: 0.5519
+
+Enhanced:
+- Precision: 0.5351 (±0.0820)
+- Recall: 0.6034 (±0.0540)
+- F1 Score: 0.5610 (±0.0400)
+
+F1 Score Improvement: 1.66%
+
+3. Keras
+---------
+Dataset size: 668 samples (135 positive, 533 negative)
+
+Baseline (from Lab 1):
+- Precision: 0.6285
+- Recall: 0.6961
+- F1 Score: 0.5369
+
+Enhanced:
+- Precision: 0.5111 (±0.0528)
+- Recall: 0.7366 (±0.0671)
+- F1 Score: 0.6014 (±0.0480)
+
+F1 Score Improvement: 12.01%
+
+4. MXNet
+---------
+Dataset size: 516 samples (65 positive, 451 negative)
+
+Baseline (from Lab 1):
+- Precision: 0.6138
+- Recall: 0.7505
+- F1 Score: 0.5479
+
+Enhanced:
+- Precision: 0.5843 (±0.0819)
+- Recall: 0.4750 (±0.0981)
+- F1 Score: 0.5161 (±0.0689)
+
+F1 Score Improvement: -5.81%
+
+5. Caffe
+---------
+Dataset size: 286 samples (33 positive, 253 negative)
+
+Baseline (from Lab 1):
+- Precision: 0.5571
+- Recall: 0.6234
+- F1 Score: 0.4428
+
+Enhanced:
+- Precision: 0.4279 (±0.1760)
+- Recall: 0.5500 (±0.1025)
+- F1 Score: 0.4692 (±0.1238)
+
+F1 Score Improvement: 5.97%
+
+
+=== Aggregate Results Across All Projects ===
+
+Baseline (from Lab 1):
+Average Precision: 0.6082 (±0.0277)
+Average Recall: 0.7066 (±0.0455)
+Average F1 Score: 0.5240 (±0.0410)
+
+Enhanced:
+Average Precision: 0.4971 (±0.0615)
+Average Recall: 0.6318 (±0.1178)
+Average F1 Score: 0.5384 (±0.0443)
+
+Overall F1 Score Improvement: 2.74%

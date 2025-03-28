@@ -1,0 +1,7 @@
+Baseline Evaluation Results for tensorflow
+==================================================
+
+Dataset size: 1490 samples (279 positive, 1211 negative)
+- Precision: 0.6358 (±0.0153)
+- Recall: 0.7226 (±0.0144)
+- F1 Score: 0.5406 (±0.0254)

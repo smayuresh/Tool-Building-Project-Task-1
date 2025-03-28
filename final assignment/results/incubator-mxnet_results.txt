@@ -1,0 +1,7 @@
+Baseline Evaluation Results for incubator-mxnet
+==================================================
+
+Dataset size: 516 samples (65 positive, 451 negative)
+- Precision: 0.6138 (±0.0109)
+- Recall: 0.7505 (±0.0244)
+- F1 Score: 0.5479 (±0.0237)

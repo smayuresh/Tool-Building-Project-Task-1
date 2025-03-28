@@ -1,0 +1,7 @@
+Baseline Evaluation Results for pytorch
+==================================================
+
+Dataset size: 752 samples (95 positive, 657 negative)
+- Precision: 0.6056 (±0.0157)
+- Recall: 0.7402 (±0.0301)
+- F1 Score: 0.5519 (±0.0192)

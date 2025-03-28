@@ -1,0 +1,53 @@
+Baseline Evaluation Results
+=========================
+
+1. Tensorflow
+--------------
+Dataset size: 1490 samples (279 positive, 1211 negative)
+- Precision: 0.6358 (±0.0153)
+- Recall: 0.7226 (±0.0144)
+- F1 Score: 0.5406 (±0.0254)
+
+2. Pytorch
+-----------
+Dataset size: 752 samples (95 positive, 657 negative)
+- Precision: 0.6056 (±0.0157)
+- Recall: 0.7402 (±0.0301)
+- F1 Score: 0.5519 (±0.0192)
+
+3. Keras
+---------
+Dataset size: 668 samples (135 positive, 533 negative)
+- Precision: 0.6285 (±0.0208)
+- Recall: 0.6961 (±0.0333)
+- F1 Score: 0.5369 (±0.0352)
+
+4. MXNet
+---------
+Dataset size: 516 samples (65 positive, 451 negative)
+- Precision: 0.6138 (±0.0109)
+- Recall: 0.7505 (±0.0244)
+- F1 Score: 0.5479 (±0.0237)
+
+5. Caffe
+---------
+Dataset size: 286 samples (33 positive, 253 negative)
+- Precision: 0.5571 (±0.0463)
+- Recall: 0.6234 (±0.1292)
+- F1 Score: 0.4428 (±0.1008)
+
+
+Summary Statistics
+==================
+
+Precision:
+Mean: 0.6082
+Std: 0.0276
+
+Recall:
+Mean: 0.7066
+Std: 0.0455
+
+F1:
+Mean: 0.5240
+Std: 0.0410

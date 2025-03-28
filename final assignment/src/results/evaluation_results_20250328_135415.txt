@@ -1,0 +1,6 @@
+Bug Report Classification Evaluation Results
+=========================================
+
+1. TensorFlow
+--------------
+Dataset size: 1490 samples (279 positive, 1211 negative)
