@@ -51,7 +51,7 @@ pip install -r requirements.txt
 ### Basic Usage
 
 ```python
-from ensemble_classifier import EnhancedBugReportClassifier
+from src.ensemble_classifier import EnhancedBugReportClassifier
 
 # Initialize the classifier
 classifier = EnhancedBugReportClassifier()
@@ -72,7 +72,7 @@ metrics = classifier.evaluate(data)
 Run experiments across multiple frameworks:
 
 ```bash
-python evaluate.py [--project PROJECT] [--n_iterations N] [--output_dir DIR]
+python src/evaluate.py [--project PROJECT] [--n_iterations N] [--output_dir DIR]
 ```
 
 Available arguments:
@@ -82,7 +82,7 @@ Available arguments:
 
 Example:
 ```bash
-python evaluate.py --project tensorflow --n_iterations 50
+python src/evaluate.py --project tensorflow --n_iterations 50
 ```
 
 ## Documentation
@@ -93,17 +93,18 @@ For detailed documentation, please refer to the [User Manual](documents/manual.m
 
 ```
 .
-├── documents/           # Documentation files
-│   ├── manual.md       # User manual
-│   └── README.md       # Documentation README
-├── baseline_results/    # Baseline evaluation results
-├── ensemble_classifier.py  # Main classifier implementation
-├── evaluate.py         # Evaluation script
-├── run_baseline.py     # Baseline implementation
-├── .gitignore         # Git ignore file
-├── LICENSE           # MIT License
-├── README.md         # Project README
-└── requirements.txt  # Python dependencies
+├── src/               # Source code
+│   ├── ensemble_classifier.py  # Main classifier implementation
+│   ├── evaluate.py    # Evaluation script
+│   └── run_baseline.py # Baseline implementation
+├── baseline_results/  # Baseline evaluation results
+├── documents/        # Documentation files
+│   ├── manual.md     # User manual
+│   └── README.md     # Documentation README
+├── .gitignore       # Git ignore file
+├── LICENSE         # MIT License
+├── README.md       # Project README
+└── requirements.txt # Python dependencies
 ```
 
 ## Contributing
