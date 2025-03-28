@@ -37,6 +37,8 @@ Thumbs.db
 
 # Project specific
 baseline_results/
+results/*
+!results/.gitkeep
 *.pkl
 *.model
 *.csv

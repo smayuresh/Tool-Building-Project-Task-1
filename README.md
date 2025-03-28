@@ -78,7 +78,7 @@ python src/evaluate.py [--project PROJECT] [--n_iterations N] [--output_dir DIR]
 Available arguments:
 - `--project`: Specific project to evaluate (default: all projects)
 - `--n_iterations`: Number of evaluation iterations (default: 30)
-- `--output_dir`: Directory to save results (default: 'baseline_results')
+- `--output_dir`: Directory to save results (default: 'results')
 
 Example:
 ```bash
@@ -97,6 +97,8 @@ For detailed documentation, please refer to the [User Manual](documents/manual.m
 │   ├── ensemble_classifier.py  # Main classifier implementation
 │   ├── evaluate.py    # Evaluation script
 │   └── run_baseline.py # Baseline implementation
+├── results/          # Evaluation results
+│   └── .gitkeep     # Keep folder in git
 ├── baseline_results/  # Baseline evaluation results
 ├── documents/        # Documentation files
 │   ├── manual.md     # User manual
