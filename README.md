@@ -28,11 +28,17 @@ The classifier shows significant improvements over baseline results:
 
 ## Documentation
 
-Detailed documentation is available in the following PDF files:
+Documentation is available in both PDF and Markdown formats:
 
+### PDF Documentation (in root directory)
 - [requirements.pdf](requirements.pdf): System requirements and dependencies
 - [manual.pdf](manual.pdf): User manual with usage instructions
 - [replication.pdf](replication.pdf): Instructions for replicating results
+
+### Markdown Documentation (in docs directory)
+- [requirements.md](docs/requirements.md): System requirements and dependencies
+- [manual.md](docs/manual.md): User manual with usage instructions
+- [replication.md](docs/replication.md): Instructions for replicating results
 
 ## Installation
 
@@ -82,6 +88,10 @@ python src/evaluate.py [--project PROJECT] [--n_iterations N]
 │   ├── ensemble_classifier.py
 │   ├── evaluate.py
 │   └── run_baseline.py
+├── docs/
+│   ├── requirements.md
+│   ├── manual.md
+│   └── replication.md
 ├── results/
 │   └── .gitkeep
 ├── requirements.pdf
