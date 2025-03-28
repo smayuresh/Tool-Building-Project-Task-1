@@ -97,11 +97,9 @@ For detailed documentation, please refer to the [User Manual](documents/manual.m
 │   ├── manual.md       # User manual
 │   └── README.md       # Documentation README
 ├── baseline_results/    # Baseline evaluation results
-├── coursework/         # Main project implementation
-│   └── src/           # Source code
-│       ├── evaluate.py
-│       ├── ensemble_classifier.py
-│       └── run_baseline.py
+├── ensemble_classifier.py  # Main classifier implementation
+├── evaluate.py         # Evaluation script
+├── run_baseline.py     # Baseline implementation
 ├── .gitignore         # Git ignore file
 ├── LICENSE           # MIT License
 ├── README.md         # Project README
