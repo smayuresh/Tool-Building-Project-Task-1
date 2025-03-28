@@ -1,6 +1,6 @@
 # System Requirements and Dependencies
 
-## Core Dependencies
+## 1. Core Dependencies
 
 ### Python Packages
 - numpy==1.24.3
@@ -24,7 +24,7 @@
 - joblib==1.3.2
 - tqdm==4.65.0
 
-## System Requirements
+## 2. System Requirements
 
 ### Hardware
 - CPU: Intel i5/AMD Ryzen 5 or better
@@ -37,35 +37,35 @@
 - pip (Python package manager)
 - Git (for version control)
 
-## Installation Instructions
+## 3. Installation Instructions
 
-1. Clone the repository:
+### Step 1: Clone the repository
 ```bash
 git clone https://github.com/smayuresh/Tool-Building-Project-Task-1.git
 cd Tool-Building-Project-Task-1
 ```
 
-2. Create and activate virtual environment:
+### Step 2: Create and activate virtual environment
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
-3. Install dependencies:
+### Step 3: Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-## Version Compatibility
+## 4. Version Compatibility
 
 ### Python Version
 - Minimum: Python 3.9
 - Recommended: Python 3.9-3.11
 
 ### Package Versions
-All package versions are specified in `requirements.txt` for compatibility.
+All package versions are specified in requirements.txt for compatibility.
 
-## Additional Notes
+## 5. Additional Notes
 
 ### Virtual Environment
 - Using virtual environment is recommended
@@ -79,8 +79,8 @@ All package versions are specified in `requirements.txt` for compatibility.
 
 ### Troubleshooting
 - If installation fails, try updating pip:
-```bash
-python -m pip install --upgrade pip
-```
+  ```bash
+  python -m pip install --upgrade pip
+  ```
 - For GPU issues, verify CUDA installation
 - Check system requirements if performance is poor 

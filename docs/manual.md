@@ -1,39 +1,12 @@
-# User Manual - Enhanced Bug Report Classifier
+# Enhanced Bug Report Classifier
+# User Manual
 
-## Introduction
-
+## 1. Introduction
 The Enhanced Bug Report Classifier is a machine learning system designed to automatically identify performance-related bug reports in deep learning frameworks. This manual provides comprehensive instructions for using the tool effectively.
 
-## Installation
+## 2. Basic Usage
 
-### Prerequisites
-- Python 3.9 or higher
-- pip (Python package manager)
-- Git (for version control)
-
-### Setup Steps
-
-1. Clone the repository:
-```bash
-git clone https://github.com/smayuresh/Tool-Building-Project-Task-1.git
-cd Tool-Building-Project-Task-1
-```
-
-2. Create and activate virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-## Basic Usage
-
-### As a Module
-
+### Module Interface
 ```python
 from src.ensemble_classifier import EnhancedBugReportClassifier
 
@@ -46,26 +19,22 @@ metrics = classifier.evaluate(test_data)
 ```
 
 ### Command Line Interface
-
 ```bash
 python src/evaluate.py [--project PROJECT] [--n_iterations N]
 ```
 
-Available arguments:
+**Arguments:**
 - `--project`: Specific project to evaluate (default: all projects)
 - `--n_iterations`: Number of evaluation iterations (default: 30)
 
-Example:
+**Example:**
 ```bash
 python src/evaluate.py --project tensorflow --n_iterations 50
 ```
 
-## Advanced Usage
+## 3. Advanced Usage
 
 ### Custom Feature Engineering
-
-The classifier supports custom feature engineering through the following methods:
-
 ```python
 # Add custom features
 classifier.add_custom_features(feature_function)
@@ -75,9 +44,6 @@ classifier.set_feature_weights(weights)
 ```
 
 ### Ensemble Configuration
-
-You can configure the ensemble of classifiers:
-
 ```python
 # Set base classifiers
 classifier.set_base_classifiers([
@@ -91,22 +57,10 @@ classifier.set_base_classifiers([
 classifier.set_meta_classifier('logistic_regression')
 ```
 
-### Saving and Loading Models
-
-```python
-# Save trained model
-classifier.save_model('model.pkl')
-
-# Load saved model
-classifier.load_model('model.pkl')
-```
-
-## Configuration
+## 4. Configuration
 
 ### Preprocessing Options
-
 ```python
-# Configure text preprocessing
 classifier.set_preprocessing_options({
     'remove_urls': True,
     'remove_numbers': False,
@@ -114,10 +68,8 @@ classifier.set_preprocessing_options({
 })
 ```
 
-### Feature Extraction Settings
-
+### Feature Extraction
 ```python
-# Set feature extraction parameters
 classifier.set_feature_params({
     'max_features': 1000,
     'ngram_range': (1, 2),
@@ -126,56 +78,46 @@ classifier.set_feature_params({
 ```
 
 ### Classifier Settings
-
 ```python
-# Configure individual classifiers
 classifier.set_classifier_params('xgboost', {
     'n_estimators': 200,
     'learning_rate': 0.1
 })
 ```
 
-## Troubleshooting
+## 5. Best Practices
 
-### Common Issues
+### Data Preparation
+- Clean and preprocess data thoroughly
+- Validate input format
+- Handle missing values appropriately
 
-1. **Memory Errors**
-   - Reduce batch size
-   - Process smaller chunks of data
-   - Use smaller feature set
+### Model Training
+- Use cross-validation
+- Monitor training progress
+- Save checkpoints regularly
 
-2. **Performance Issues**
-   - Enable parallel processing
-   - Use GPU acceleration
-   - Optimize feature extraction
+### Evaluation
+- Use appropriate metrics
+- Compare with baselines
+- Document results
 
-3. **Inconsistent Results**
-   - Check random seed settings
-   - Verify data preprocessing
-   - Ensure consistent environment
+## 6. Troubleshooting
 
-### Getting Help
+### Memory Errors
+- Reduce batch size
+- Process smaller chunks of data
+- Use smaller feature set
 
-- Check the [GitHub Issues](https://github.com/smayuresh/Tool-Building-Project-Task-1/issues)
-- Review the [Replication Guide](replication.md)
-- Contact the maintainers
+### Performance Issues
+- Enable parallel processing
+- Use GPU acceleration
+- Optimize feature extraction
 
-## Best Practices
-
-1. **Data Preparation**
-   - Clean and preprocess data thoroughly
-   - Validate input format
-   - Handle missing values appropriately
-
-2. **Model Training**
-   - Use cross-validation
-   - Monitor training progress
-   - Save checkpoints regularly
-
-3. **Evaluation**
-   - Use appropriate metrics
-   - Compare with baselines
-   - Document results
+### Inconsistent Results
+- Check random seed settings
+- Verify data preprocessing
+- Ensure consistent environment
 
 ## Additional Resources
 
